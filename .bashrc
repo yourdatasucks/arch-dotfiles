@@ -20,9 +20,10 @@ YELLOW="\[\e[33m\]"
 alias ls='ls -alh --color=auto'
 alias grep='grep --color=auto'
 PS1="${BOLD}${CYAN}[\u@\h${RESET}:${RED} \W${RESET}${CYAN}]${RESET}\$ "
-complete -cf sudo
 
 alias vi='nvim'
+alias suvi='sudo nvim'
 alias brc='source ~/.bashrc && clear'
 export EDITOR=nvim
+complete -cf sudo
 
